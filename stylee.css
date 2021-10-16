@@ -1,0 +1,94 @@
+body{
+    background-color: #000000f2 !important;
+}
+#navbar{
+    position: fixed;
+    width:20% !important;
+    z-index: 99999999999;
+}
+.nav-extention{
+width: 75%;
+position: relative;
+/* display: none; */
+}
+nav{
+    /* position: fixed; */
+    width: 75px;
+    height:100vh ;
+    z-index: 999999;
+    position: relative;
+   
+}
+#navbarOpen{
+    top: 400px !important;
+}
+#close{
+display: none;
+}
+.last-icons{
+    top: 700px;
+}
+li 
+{
+    padding: 10px;
+	list-style: none !important;
+    cursor: pointer;
+
+}
+li:hover{
+    color: red ;
+    
+}
+a 
+{
+	text-decoration: none !important;
+    color: rgb(219, 238, 237) !important;
+}
+a:hover{
+    color: red !important;
+    transition: ease 1s;
+}
+i{
+    cursor: pointer;
+
+}
+i :hover {
+    color: red;
+    transition: ease 1s !important;
+}
+.foo-icons{
+    top: 550px !important;
+}
+/* search */
+.searchMo{
+    background-color: #000000f2 !important ;
+    border-top: none !important;
+    border-right: none !important;
+    border-left: none !important;
+}
+/* movies */
+.layout{
+    background-color: rgba(255, 255, 255, 0.548) !important;
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute;
+    top: 100% !important;
+ transition: all ease 1s;  
+}
+
+.posters:hover .layout
+{
+    position: absolute;
+    top:0 !important;
+    transition:all ease 1s;
+}
+.posters{
+    overflow: hidden;
+}
+/* contact us  */
+.alert{
+    display: none;
+
+}
+
+

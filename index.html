@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>move website</title>
+    <link rel="stylesheet" href="stylee.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+</head>
+
+<body>
+    <!-- side navbar section -->
+    <section id="navbar" class="d-flex ">
+        <div class="nav-extention bg-dark" id="hidenNav">
+            <div class="nav-choose text-white my-5 position-fixed ">
+                <ul id="menu">
+                    <li onclick='nowplaying()' id="showli">now_playing</li>
+                    <li onclick="popular()" id="showli"> Popular</li>
+                    <li onclick="rated()" id="showli">Top Rated</li>
+                    <li id="showli">Trending</li>
+                    <li  id="showli">Upcoming</li>
+                    <li id="showli"><a href="#contact"> Contact Us</a> </li>
+                </ul>
+            </div>
+            <div class="footer  text-white d-flex justify-content-center position-relative">
+                <div class="foo-icons my-5 p-5 position-absolute">
+                    <i class="fab fa-facebook-f m-2 "></i>
+                    <i class="fab fa-twitter m-2 "></i>
+                    <i class="fas fa-globe  m-2 "></i>
+                    <br>
+                    <span class="text-muted">Copyright Â© 2019 All Rights Reserved.</span>
+                </div>
+            </div>
+        </div>
+
+        <nav class=" bg-white ">
+            <div class="container d-flex flex-column align-items-center justify-content-between">
+
+                <div class="img ">
+                    <img src="images/logo.png " class="w-100 my-3 p-1">
+                </div>
+
+                <div id="navbarOpen" class="icon-nav position-absolute">
+                    <i class="fa fa-align-justify fs-3" id="open"></i>
+                    <i class="far fa-window-close fs-3 " id="close"></i>
+                </div>
+
+                <div class="last-icons position-absolute">
+                    <i class="fas fa-globe my-2"></i>
+                    <br>
+                    <i class="fas fa-share-alt"></i>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- search -->
+    <section id="search">
+        <div class="container w-75 ">
+            <div class="row ">
+                <div class="col-md-6 my-5">
+                    <input id="allMovies"type="text" name="allMovies" class="searchMo form-control mb-5 text-white text-center "
+                        placeholder="get movies by word...">
+
+                </div>
+                
+                <div class=" inp col-md-6 my-5">
+                    <input type="text" name="searchBar" id="searchBar"
+                        class=" searchMo form-control  text-white text-center" placeholder="search...">
+                </div>
+            </div>
+    </section>
+    <!-- movies -->
+    <section id="movies">
+        <div class="container text-center">
+            <div class="row" id="rowData">
+
+
+
+            </div>
+        </div>
+    </section>
+    <!-- contact us -->
+
+    <section id="contact" class="container  w-75 mx-auto my-5 ">
+        <h2 class="text-light my-5">ContacUs...</h2>
+        <!-- first row of form -->
+        <div class="row my-5">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input class="form-control searchMo my-2" id="name" placeholder="Enter Your Name">
+                    <div class="alert alert-danger" id="namealert" role="alert">
+                        Your Name is not valid
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input class="form-control searchMo my-2" id="email" placeholder="Enter Email">
+                    <div class="alert alert-danger" id="emailalert" role="alert">
+                        entre valid email
+                    </div>
+                </div>
+            </div>
+            <!-- second row of form -->
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input class="form-control searchMo my-2" id="phone" placeholder="Enter phone">
+                    <div class="alert alert-danger" id="phonealert" role="alert">
+                        entre valid phone
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input class="form-control searchMo my-2" id="age" placeholder="Enter Age">
+                    <div class="alert alert-danger" id="agealert" role="alert">
+                        entre valid Age
+                    </div>
+                </div>
+            </div>
+            <!-- third row of form -->
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input class="form-control searchMo my-2" type="password" id="password"
+                        placeholder="Enter Password">
+                    <div class="alert alert-danger" id="passwordalert" role="alert">
+                        entre valid password *Minimum eight characters, at least one letter and one number:*
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input class="form-control searchMo my-2" type="password" id="rePassword"
+                        placeholder="Enter RePassword">
+                    <div class="alert alert-danger" id="repasswordalert" role="alert">
+                        entre valid Repassword
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="btn">
+            <button type="button" id="submitBtn" class="btn btn-outline-danger" disabled>Submit</button>
+        </div>
+    </section>
+
+
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
